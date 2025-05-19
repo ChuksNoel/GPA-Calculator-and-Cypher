@@ -11,18 +11,10 @@ colors = {
     'red':'\033[91m',
     'yellow':'\033[93m',
     'blue':'\033[94m',
-    'magenta':'\033[95m',
     'cyan':'\033[96m',
-    'white':'\033[97m',
-    'black':'\033[90m',
     'reset':'\033[0m',
     'bold':'\033[1m',
     'underline':'\033[4m',
-    'blink':'\033[5m',
-    'reverse':'\033[7m',
-    'hidden':'\033[8m',
-    'strikethrough':'\033[9m',
-    'bg_black':'\033[40m',
     'bg_red':'\033[41m',
 }
 courses = []
@@ -102,7 +94,7 @@ def main1(): #The gpa calculator main function
     while inputs != 'done':
         if not inputs:
             s_print(
-                colors['yellow'] + "Enter course name and/or (or 'done' to finish):  " + colors['reset'],
+                colors['yellow'] + "Enter course name and/or course code (or 'done' to finish):  " + colors['reset'],
                 t=0.01, end='')
             inputs = input()
 
